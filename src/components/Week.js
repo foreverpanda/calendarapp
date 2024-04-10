@@ -1,9 +1,10 @@
+// Week.js
 import React from 'react';
-import Day from './Day.js';
+import Day from './Day';
 
 function Week({ startDate }) {
-  // Generate dates for the week starting from startDate
   const days = [];
+
   for (let i = 0; i < 7; i++) {
     const date = new Date(startDate);
     date.setDate(startDate.getDate() + i);
